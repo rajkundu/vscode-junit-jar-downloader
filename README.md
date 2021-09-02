@@ -5,6 +5,8 @@ The release versions of the following repositories are downloaded:
 - [OpenTest4J]("https://search.maven.org/artifact/org.opentest4j/opentest4j")
 - [JUnit Platform Console Standalone]("https://search.maven.org/artifact/org.junit.platform/junit-platform-console-standalone")
 
+This project employs code from the [File Download](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vscode-download-file) extension for VS Code by Dario Fuzinato. Much thanks to him for his magnificent file-downloading code.
+
 ## Features
 - Users can choose the destination directory for the JAR files (default = `workspace/lib`)
 
@@ -21,8 +23,9 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.2
+Add attribution to Dario Fuzinato
 ### 1.0.1
 Fixed dependency: [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) rather than [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
-
 ### 1.0.0
 Initial release
