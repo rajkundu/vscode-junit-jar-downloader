@@ -23,6 +23,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.1.0
+- Added keybindings for initiating download: `Ctrl`+`Alt`+`J` (Windows) or `Cmd`+`Option`+`J` (Mac)
 ### 1.0.3
 - Fixed ability to configure default destination directory in prompt (starts as `lib`)
 ### 1.0.2

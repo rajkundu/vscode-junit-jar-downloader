@@ -2,7 +2,7 @@
 	"name": "junit-jar-downloader",
 	"displayName": "JUnit JAR Downloader",
 	"description": "Downloads JUnit JAR files to current project for easy use with Debugger for Java extension",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"publisher": "rajkundu",
 	"repository": "https://github.com/rajkundu/vscode-junit-jar-downloader",
 	"icon": "icon.png",
@@ -23,6 +23,13 @@
 				"title": "Download JUnit JAR files"
 			}
 		],
+		"keybindings": [
+            {
+                "command": "junit-jar-downloader.download",
+                "key": "ctrl+alt+j",
+                "mac": "cmd+alt+j"
+            }
+        ],
 		"configuration": {
 			"title": "JUnit JAR Downloader Configuration",
 			"properties": {

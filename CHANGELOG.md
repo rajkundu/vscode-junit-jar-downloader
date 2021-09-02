@@ -4,6 +4,9 @@ All notable changes to the "junit-jar-downloader" extension will be documented i
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-09-02
+### Added
+- Added keybindings for initiating download: `Ctrl`+`Alt`+`J` (Windows) or `Cmd`+`Option`+`J` (Mac)
 ## [1.0.3] - 2021-09-02
 ### Changed
 - Fixed ability to configure default destination directory in prompt (starts as `lib`)
