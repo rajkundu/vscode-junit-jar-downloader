@@ -4,6 +4,10 @@ All notable changes to the "junit-jar-downloader" extension will be documented i
 
 ## [Unreleased]
 
+## [1.2.0] - 2021-09-02
+### Added
+- Now empties destination directory before downloading JAR files to prevent potential version conflicts
+
 ## [1.1.1] - 2021-09-02
 ### Changed
 - Fixed markdown syntax error in `README.md`

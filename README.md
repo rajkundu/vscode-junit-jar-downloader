@@ -23,6 +23,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.2.0
+- Now empties destination directory before downloading JAR files to prevent potential version conflicts
 ### 1.1.1
 - Fixed markdown syntax error in `README.md`
 ### 1.1.0

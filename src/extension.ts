@@ -21,6 +21,10 @@ export function activate(context: vscode.ExtensionContext) {
 				return;
 			}
 			const dest = path.join(vscode.workspace.workspaceFolders![0].uri.fsPath, inputDest as string); 
+
+			// Empty destination directory
+			fs.rmSync(dest, { recursive: true, force: true });
+
 			for(var repoURL of repoURLs) {
 				getReleaseJAR(repoURL, dest);
 			}
@@ -75,6 +79,7 @@ async function getReleaseJAR(repoURL: string, dest: string) {
 		const targetPath = `${dest}/${filename}`;
 	
 		if (response.statusCode === 200) {
+			// Create destination directory and download file into it
 			fs.mkdir(dest, err => { 
 				var file = fs.createWriteStream(targetPath);
 				response.pipe(file);
