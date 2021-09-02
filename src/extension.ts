@@ -16,20 +16,20 @@ export function activate(context: vscode.ExtensionContext) {
 			defaultDest = "lib";
 		}
 		vscode.window.showInputBox({ prompt: 'Enter destination directory for JUnit JAR files', value: defaultDest as string}).then((inputDest) => {
-			if (!inputDest) {
-				vscode.window.showErrorMessage("Please enter valid directory");
+			if (inputDest && !inputDest?.trim()) {
+				vscode.window.showErrorMessage("Please enter a valid directory (blank for current workspace)");
 				return;
 			}
-			const dest = path.join(vscode.workspace.workspaceFolders![0].uri.fsPath, inputDest as string); 
+			inputDest = inputDest?.trim();
 
-			// Empty destination directory
-			fs.rmSync(dest, { recursive: true, force: true });
+			const dest = path.join(vscode.workspace.workspaceFolders![0].uri.fsPath, inputDest as string);
 
 			for(var repoURL of repoURLs) {
 				getReleaseJAR(repoURL, dest);
 			}
-			vscode.window.showInformationMessage(`Successfully downloaded JUnit JAR files into "${inputDest}"`);
-		});	
+
+			vscode.window.showInformationMessage(`Successfully downloaded JUnit JAR files into directory "${inputDest}"`);
+		});
 	});
 
 	context.subscriptions.push(disposable);
@@ -76,7 +76,7 @@ async function getReleaseJAR(repoURL: string, dest: string) {
 			filename += `.${contentType!.split('/')[1]}`;
 		}
 	
-		const targetPath = `${dest}/${filename}`;
+		const targetPath = path.join(dest, filename);
 	
 		if (response.statusCode === 200) {
 			// Create destination directory and download file into it

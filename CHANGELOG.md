@@ -4,6 +4,10 @@ All notable changes to the "junit-jar-downloader" extension will be documented i
 
 ## [Unreleased]
 
+## [1.3.0] - 2021-09-02
+### Removed
+- Upon second thought, emptying the destination directory could be a terrible idea. Reverted v1.2.0 changes & made minor improvements.
+
 ## [1.2.0] - 2021-09-02
 ### Added
 - Now empties destination directory before downloading JAR files to prevent potential version conflicts

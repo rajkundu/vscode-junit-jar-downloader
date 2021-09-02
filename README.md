@@ -23,6 +23,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.3.0
+- Upon second thought, emptying the destination directory could be a terrible idea. Reverted v1.2.0 changes & made minor improvements.
 ### 1.2.0
 - Now empties destination directory before downloading JAR files to prevent potential version conflicts
 ### 1.1.1
