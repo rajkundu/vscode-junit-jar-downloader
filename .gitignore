@@ -5,3 +5,7 @@ node_modules
 *.vsix
 .eslintrc.json
 .DS_Store
+
+# Demo videos
+demo.gif
+demo.mov

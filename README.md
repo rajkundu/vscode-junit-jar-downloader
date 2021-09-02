@@ -23,9 +23,11 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.3
+- Fixed ability to configure default destination directory in prompt (starts as `lib`)
 ### 1.0.2
-Add attribution to Dario Fuzinato
+- Added attribution to Dario Fuzinato
 ### 1.0.1
-Fixed dependency: [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) rather than [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
+- Fixed dependency: [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) rather than [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
 ### 1.0.0
-Initial release
+- Initial release

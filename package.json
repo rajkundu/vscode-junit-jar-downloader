@@ -2,7 +2,7 @@
 	"name": "junit-jar-downloader",
 	"displayName": "JUnit JAR Downloader",
 	"description": "Downloads JUnit JAR files to current project for easy use with Debugger for Java extension",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "rajkundu",
 	"repository": "https://github.com/rajkundu/vscode-junit-jar-downloader",
 	"icon": "icon.png",
@@ -22,7 +22,17 @@
 				"command": "junit-jar-downloader.download",
 				"title": "Download JUnit JAR files"
 			}
-		]
+		],
+		"configuration": {
+			"title": "JUnit JAR Downloader Configuration",
+			"properties": {
+			  "junit-jar-downloader.defaultDestDir": {
+				"type": "string",
+				"default": "lib",
+				"description": "Default destination folder where JUnit JAR files should be saved"
+			  }
+			}
+		  }
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
