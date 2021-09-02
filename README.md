@@ -1,9 +1,9 @@
 # JUnit JAR Downloader
 This extension simply downloads the JUnit JAR files necessary for simple unit testing.<br/>
 The release versions of the following repositories are downloaded:
-- [JUnit 5]("https://search.maven.org/artifact/org.junit.jupiter/junit-jupiter-api")
-- [OpenTest4J]("https://search.maven.org/artifact/org.opentest4j/opentest4j")
-- [JUnit Platform Console Standalone]("https://search.maven.org/artifact/org.junit.platform/junit-platform-console-standalone")
+- [JUnit 5](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/)
+- [OpenTest4J](https://repo1.maven.org/maven2/org/opentest4j/opentest4j/)
+- [JUnit Platform Console Standalone](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/)
 
 This project employs code from the [File Download](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vscode-download-file) extension for VS Code by Dario Fuzinato. Much thanks to him for his magnificent file-downloading code.
 
@@ -23,6 +23,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.1.1
+- Fixed markdown syntax error in `README.md`
 ### 1.1.0
 - Added keybindings for initiating download: `Ctrl`+`Alt`+`J` (Windows) or `Cmd`+`Option`+`J` (Mac)
 ### 1.0.3
