@@ -5,7 +5,7 @@ The release versions of the following repositories are downloaded:
 - [OpenTest4J](https://repo1.maven.org/maven2/org/opentest4j/opentest4j/)
 - [JUnit Platform Console Standalone](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/)
 
-This project employs code from the [File Download](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vscode-download-file) extension for VS Code by Dario Fuzinato. Much thanks to him for his magnificent file-downloading code.
+This project employs code from the [File Download](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vscode-download-file) extension for VS Code by Dario Fuzinato. Many thanks to him for his magnificent file-downloading code.
 
 ## Features
 - Users can choose the destination directory for the JAR files (default = `workspace/lib`)
